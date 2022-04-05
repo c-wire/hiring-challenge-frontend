@@ -2,6 +2,7 @@ name: Build the project
 on:
   push:
     branches: [ master ]
+  workflow_call:
 
 jobs:
   build:
