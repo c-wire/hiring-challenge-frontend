@@ -1,7 +1,7 @@
 
 # Coding challenge: Your barkeeper's recipes
 
-We will build a simple recipe search engine for cocktails. You have the following user stories
+You will build a simple recipe search engine for cocktails. You have the following user stories
 to explain the basic functionality:
 
 ## As a barkeeper ..
