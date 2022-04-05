@@ -1,60 +1,60 @@
-## Instructions
 
-### 1 - Introduce your self with the challenge - make sure you understand it
+# Coding challenge: Your barkeeper's recipes
 
-Please read carefully. If in doubt, or if you have any questions, please contact us **immediately**, please do not waste your time, we are happy to help and answer any questions you have.
+We will build a simple recipe search engine for cocktails. You have the following user stories
+to explain the basic functionality:
 
-Read carefully, and start working only when you are sure that you fully understand the challenge.
+## As a barkeeper ..
 
-### 2 - Working on the challenge
+I can access my recipes in the browser. I get prompted with an empty search field and a `Search` button.
 
-Ideally you should spend less than one working day on this, but this is only our ballpark estimation. We don’t want our candidates spending too much time, but please note that we **do not** expect that you return the completed challenge one day after receiving it. We are respectful of your time, so we totally understand if you want work on this for 2-3 days, for 1-2-3h hours each day.
+![Mockup, empty input](images/mockup_empty.png "Mockup, empty input")
 
-Don’t rush, make sure that you test the app carefully before submitting it. We are not judging you on the speed, but on the quality of the code, the ideas and design of the app (and/or UI)
+I can type e.g. `sour` into the search field and click on the `Search` button or hit enter to find all my sour recipes.
+I get a search indicator, e.g. ``loading ...`` when the results are fetched.
 
-### 3 - All done - submit the challenge
+![Mockup, search](images/mockup_search.png "Mockup, search")
 
-Once completed, please test the app, and when you are happy with the results you can
+I get all my sour recipes listed underneath the search field.
 
-- put it on your github, and send us the link (preferred)
-- zip the whole project and send us via the email
+![Mockup, results](images/mockup_results.png "Mockup, results")
 
-4 - Evaluation Critera
+## Technical requirements
 
-## CHALLENGE - Simple Cocktail Search
+You should use the [cocktaildb.com API](https://www.thecocktaildb.com/api.php).
+Here's an example query for `sour`: `curl https://www.thecocktaildb.com/api/json/v1/1/search.php?s=sour`
 
-We will be using API at [https://www.thecocktaildb.com/api.php](https://www.thecocktaildb.com/api.php)
+### Frameworks
 
-The App should be really simple, and it should consist only of one screen.
+Pick your poison :) We're always interested in funky solutions, but industry standards are what we work with.
 
-The screen has one input field where user will enter the cocktail name eg. `margarita` and then all results will be shown below.
+### Works for me..
 
-For this search functionality we should use this call: `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita`
+doesn't cut it. Ensure the project isn't only building on your machine.
 
-The screen should initially show the input field and the search button.
+Bonus: Add a batch displaying project health.
 
-When user enters the cocktail name **(1**) and clicks on the search button **(2)**, there should be an indication that the search is working (loading.. text, or spinner) **(3)**
+### Tests and documentation
 
-And finally, when the results arrive, we should show them below.
+Ideally, you applied TDD and the rest is history, but if you don't find the time to write meaningful tests,
+please spend a few minutes thinking about what you would be testing and how. Write it down under
+_Discussion_.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d8d0d75d-81c0-4bf4-ae3f-c0b91e21324f/Untitled.png)
+Generally, leave the project as tidy as you want the next developer to find it.  
 
-**Bonus points 1**
+## Evaluation criteria and time
 
-Please note that we didn’t chose any colors or fonts. This is on purpose.
+The challenge is meant to give us a feel for how you work and to serve as a starting point for
+a follow-up discussion. Completeness is just one factor.
 
-If you like you can pick colors or shades of input/buttons text and adjust image to fit the design.
+Your time is precious, we don't want you to spend too much time. It should be doable in 2-4h given the right approach 
+and tools. Speed is not a criterion.
 
-Also, you can re-arrange the way the results are shown in any way you think it’s best.
+## Contact
 
-**Bonus points 2**
+We're here to help and answer questions so do not hesitate to ping us, either using the emails from the first interview 
+round or [devs@cwire.com](mailto:devs@cwire.com).
 
-Api documentation has “Lookup a random cocktail” described.
+# Discussion
 
-Add another button next to the search, “Random cocktail” that will show a random cocktail instead of one that user is searching for
-
-**Bonus points 3**
-
-In our wireframe design we show only image of the drink, name, instruction and ingreedients.
-
-There are couple more fields in the API that could be interesting to show here, feel free to include them, and figure out where is the best place to show them.
+Anything omitted, interesting decisions and criticism go here.
