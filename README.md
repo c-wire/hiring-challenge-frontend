@@ -32,7 +32,7 @@ Pick your poison :) We're always interested in funky solutions, but industry sta
 
 doesn't cut it. Ensure the project isn't only building on your machine.
 
-Bonus: Add a batch displaying project health.
+Bonus: Add a badge displaying project health.
 
 ### Tests and documentation
 
